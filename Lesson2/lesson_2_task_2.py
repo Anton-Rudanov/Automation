@@ -3,5 +3,7 @@ def is_year_leap(year):
         return True
     else:
         return False
+
+
 year = int(input("Введите год: "))
-print("год", year,":", is_year_leap(year))
+print("год", year, ":", is_year_leap(year))
