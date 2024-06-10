@@ -26,7 +26,7 @@ def test_trim():
     assert utils.trim(" skypro ") == "skypro "
     assert utils.trim(" skypro 123 ") == "skypro 123 "
     """NEGATIVE"""
-    assert utils.capitilize("") == ""
+    assert utils.trim("") == ""
 
 
 @pytest.mark.xfail()
