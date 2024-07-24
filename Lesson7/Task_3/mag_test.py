@@ -34,7 +34,7 @@ def test_complete_purchase(browser):
     checkout_page.proceed_to_checkout()
 
     # Шаг 6: Заполнение персональной информации
-    personal_info_page.fill_personal_info("Andrey", "B", "123")
+    personal_info_page.fill_personal_info("Anton", "Rudanov", "601642")
 
     # Шаг 7: Проверка итоговой стоимости и завершение покупки
     total_amount = overview_page.get_total_amount()
