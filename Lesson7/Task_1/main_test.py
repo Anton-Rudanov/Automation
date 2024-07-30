@@ -29,6 +29,7 @@ def test_registration(driver):
     assert 1 == test_red
 
     test_green = registration_page.other_fields_green()
-    assert True == test_green
+    for green in test_green:
+        assert green == 'rgba(209, 231, 221, 1)'
 
 # print("Тест успешно пройден!")
