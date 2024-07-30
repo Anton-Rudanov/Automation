@@ -36,9 +36,10 @@ class MainPage:
 
     # Вызов метода для определения, имеют ли поля ввода зеленый цвет,
     #  если они заполнены
-    def other_fields_green(self):
+    def other_fields_green(self):    
         other_fields = ["#first-name", "#last-name", "#address", "#e-mail",
-                        "#phone", "#city", "#country", "#job-position", "#company"]
+                    "#phone", "#city", "#country", "#job-position", "#company"]
+        field_color = []
         for field in other_fields:
-            field_color = self.driver.find_element(By.CSS_SELECTOR, field).value_of_css_property("background-color")
-        return field_color == 'rgba(209, 231, 221, 1)'
+            field_color.append(self.driver.find_element(By.CSS_SELECTOR, field).value_of_css_property("background-color"))
+        return field_color
