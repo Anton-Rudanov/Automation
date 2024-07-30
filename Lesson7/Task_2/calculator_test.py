@@ -3,6 +3,7 @@ from calculator_page import CalculatorPage
 import pytest
 
 
+
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
