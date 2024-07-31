@@ -36,6 +36,6 @@ class CalculatorPage:
         equals_button.click()
 
     def get_result_text(self):
-        result = WebDriverWait(self.driver, 46).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "div.screen"), "15"))
-        result = self.driver.find_element(By.CSS_SELECTOR, "div.screen").text.strip()
+        WebDriverWait(self.driver, 6).until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "div.screen"), "15"))
+        result = self.driver.find_element(By.CSS_SELECTOR, "div.screen").text
         return result

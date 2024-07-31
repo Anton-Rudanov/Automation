@@ -15,7 +15,7 @@ def test_calculator(driver):
     calculator_page = CalculatorPage(driver)
     calculator_page.open_page(
         "https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
-    calculator_page.enter_delay_value("45")
+    calculator_page.enter_delay_value("5")
     calculator_page.click_button("7")
     calculator_page.click_operator_button("+")
     calculator_page.click_button("8")
